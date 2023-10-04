@@ -1,0 +1,23 @@
+
+a {
+    background-color: pink;
+    color: pink;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+img {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+}
+p {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+}
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+}
