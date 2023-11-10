@@ -57,6 +57,8 @@ header {
     background-color: #E7C24F;
     display: grid;
     grid-template-columns: 150px auto;
+    justify-content: space-around;
+    display: flex; 
 }
 
 nav a:hover {
@@ -252,9 +254,30 @@ nav {
 
 /* rivers css */
 
+.rivers-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
 
+#rivers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-top: -100px;
+}
 
+.river-1, .river-2 {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding-top: 15px;
+}
 
+.msg-2 {
+    font-size: .8em;
+    padding-bottom: 15px;
+    grid-column: 1/4;
+}
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
