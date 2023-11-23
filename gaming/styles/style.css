@@ -1,0 +1,111 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Raleway:wght@500&display=swap');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #0B0C57;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo_link {
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 250px; /* Adjust the width to your preferred size */
+    height: auto;
+}
+
+nav {
+    flex-grow: 1; /* Make the nav element take up the available space */
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+    gap: 100px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #D869F0; /* Change the color on hover */
+}
+
+nav a:hover::before {
+    content: '';
+    position: absolute;
+    top: 100%; /* Position the box just below the link */
+    left: 0;
+    width: 100%;
+    height: 5px; /* Adjust the height of the box */
+    background-color: #40E4EB; /* Color of the hover box */
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #333;
+    font-family: 'Kanit', sans-serif; /* Use Kanit for headings */
+    text-align: center; /* Center the text within the container */
+}
+
+.game-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column for the main content */
+    gap: 20px;
+}
+
+.game-section {
+    text-align: center;
+}
+
+.game-section img {
+    width: 300px;
+    height: auto;
+    display: inline-block; /* Display images side by side */
+    margin: 0 10px; /* Adjust margin for spacing between images */
+}
+
+.msg {
+    margin-top: 20px;
+    text-align: center;
+}
+
+footer {
+    background-color: #0B0C57;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+.social {
+    position: absolute;
+    bottom: 10px; /* Adjust the bottom value to position the icons */
+    right: 10px; /* Adjust the right value to position the icons */
+}
+
+.social img {
+    width: 60px;
+    height: auto;
+    margin: 0 5px;
+}
