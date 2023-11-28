@@ -109,3 +109,26 @@ footer {
     height: auto;
     margin: 0 5px;
 }
+
+/* --------------------------------------------------------*/
+/* FPS CSS */
+.fps-grid {
+    display: grid;
+    grid-template-columns: auto 1fr; /* Two columns: auto for pic_3 and 1fr for msg_3 */
+    grid-gap: 20px; /* Adjust the gap as needed */
+    text-align: center;
+}
+
+h1 {
+    grid-column: 1 / span 2; /* Make h1 span across both columns */
+}
+
+.pic_3 {
+    grid-column: 1; /* Place pic_3 in the first column */
+}
+
+.msg_3 {
+    grid-column: 2; /* Place msg_3 in the second column */
+    text-align: left; /* Align text to the left */
+    margin-top: 20px; /* Adjust as needed */
+}
